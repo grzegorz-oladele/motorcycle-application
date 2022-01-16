@@ -1,4 +1,4 @@
-package pl.grzegorz.motorcycle.service;
+package pl.grzegorz.motorcycle.service.motorcycle;
 
 import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDto;
 import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDtoInfo;

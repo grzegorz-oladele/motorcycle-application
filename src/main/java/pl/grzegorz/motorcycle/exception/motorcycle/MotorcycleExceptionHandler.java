@@ -1,4 +1,4 @@
-package pl.grzegorz.motorcycle.exception;
+package pl.grzegorz.motorcycle.exception.motorcycle;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

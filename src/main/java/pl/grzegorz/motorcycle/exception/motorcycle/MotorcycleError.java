@@ -1,4 +1,4 @@
-package pl.grzegorz.motorcycle.exception;
+package pl.grzegorz.motorcycle.exception.motorcycle;
 
 public enum MotorcycleError {
 

@@ -1,11 +1,11 @@
-package pl.grzegorz.motorcycle.service;
+package pl.grzegorz.motorcycle.service.motorcycle;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDto;
 import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDtoInfo;
-import pl.grzegorz.motorcycle.exception.MotorcycleError;
-import pl.grzegorz.motorcycle.exception.MotorcycleException;
+import pl.grzegorz.motorcycle.exception.motorcycle.MotorcycleError;
+import pl.grzegorz.motorcycle.exception.motorcycle.MotorcycleException;
 import pl.grzegorz.motorcycle.mapper.MotorcycleMapper;
 import pl.grzegorz.motorcycle.model.MotorcycleEntity;
 import pl.grzegorz.motorcycle.repository.MotorcycleRepository;

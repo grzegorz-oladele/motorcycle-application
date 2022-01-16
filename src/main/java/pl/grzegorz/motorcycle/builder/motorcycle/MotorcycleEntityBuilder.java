@@ -1,4 +1,4 @@
-package pl.grzegorz.motorcycle.builder;
+package pl.grzegorz.motorcycle.builder.motorcycle;
 
 import pl.grzegorz.motorcycle.model.MotorcycleEntity;
 
