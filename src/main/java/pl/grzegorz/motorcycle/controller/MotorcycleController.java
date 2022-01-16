@@ -50,12 +50,12 @@ public class MotorcycleController {
         return motorcycleService.getAllByHorsePower(min, max);
     }
 
-    @GetMapping("/brands")
+    @GetMapping("/brand")
     public List<MotorcycleDtoInfo> getAllByBrand(@RequestParam String brand) {
         return motorcycleService.getAllByBrand(brand);
     }
 
-    @GetMapping("/models")
+    @GetMapping("/model")
     public List<MotorcycleDtoInfo> getAllByModel(@RequestParam String model) {
         return motorcycleService.getAllByModel(model);
     }
