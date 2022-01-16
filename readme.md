@@ -41,17 +41,17 @@ add a new motorcycle to the database
 
 <span style="color: yellow">**@DeleteMapping**</span> <span style="color: green">*/motorcycles/{id}*</span> - Allows you to delete a motorcycle from the database; if the motorcycle is not found, an appropriate message is displayed
 
-<span style="color: yellow">**@PatchMapping**</span> <span style="color: green">*/motorcycles/{id}/capacity?<span style="color: blue">capacity=599</span>*</span> - Allows you to edit the motorcycle capacity; if the motorcycle is not found, an appropriate message will be displayed
+<span style="color: yellow">**@PatchMapping**</span> <span style="color: green">*/motorcycles/{id}/capacity?<span style="color: royalblue">capacity=599</span>*</span> - Allows you to edit the motorcycle capacity; if the motorcycle is not found, an appropriate message will be displayed
 
-<span style="color: yellow">**@PatchMapping**</span> <span style="color: green">*/motorcycles/{id}/horse-power?<span style="color: blue">horse-power=155</span>*</span> - Allows you to edit the motorcycle horse power; if the motorcycle is not found, an appropriate message will be displayed
+<span style="color: yellow">**@PatchMapping**</span> <span style="color: green">*/motorcycles/{id}/horse-power?<span style="color: royalblue">horse-power=155</span>*</span> - Allows you to edit the motorcycle horse power; if the motorcycle is not found, an appropriate message will be displayed
 
-<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/horse-power?<span style="color: blue">min=100&max=200</span>*</span> - Allows you to download a list of motorcycles by the given motorcycle power parameters; if the list is empty, an appropriate message will be displayed
+<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/horse-power?<span style="color: royalblue">min=100&max=200</span>*</span> - Allows you to download a list of motorcycles by the given motorcycle power parameters; if the list is empty, an appropriate message will be displayed
 
-<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/brand?<span style="color: blue">brand=ducati</span>*</span> - Allows you to retrieve a list of motorcycles by the specified motorcycle brand parameter; if the list is empty, an appropriate message will be displayed
+<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/brand?<span style="color: royalblue">brand=ducati</span>*</span> - Allows you to retrieve a list of motorcycles by the specified motorcycle brand parameter; if the list is empty, an appropriate message will be displayed
 
-<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/model?<span style="color: blue">model=s1000rr</span>*</span> - Allows you to retrieve a list of motorcycles by the specified motorcycle model parameter; if the list is empty, an appropriate message will be displayed
+<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/model?<span style="color: royalblue">model=s1000rr</span>*</span> - Allows you to retrieve a list of motorcycles by the specified motorcycle model parameter; if the list is empty, an appropriate message will be displayed
 
-<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/capacity?<span style="color: blue">min=599&max=1000</span>*</span> - Allows to download the list of motorcycles according to the given parameters of the motorcycle capacity; if the list is empty, an appropriate message will be displayed
+<span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/capacity?<span style="color: royalblue">min=599&max=1000</span>*</span> - Allows to download the list of motorcycles according to the given parameters of the motorcycle capacity; if the list is empty, an appropriate message will be displayed
 
 ####<span style="color: red">CIRCUITS</span>
 <span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/circuits*</span> - Allows you to retrieve a list of all tracks from the database
