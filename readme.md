@@ -10,6 +10,7 @@ solution, which is the motorcycle application.
 
 ###Documentation:
 
+####<span style="color: red">BIKERS</span>
 <span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/bikers*</span> - allows you to retrieve 
 all motorcyclists from the database
 
@@ -28,6 +29,7 @@ from the database, but only his ACTIVE status will be changed to false
 <span style="color: yellow">**@PatchMapping**</span> <span style="color: green">*/bikers/{bikerId}/bikes/{bikeId}*</span> -
 Allows you to assign a specific motorcycle to a specific rider
 
+####<span style="color: red">MOTORCYCLES</span>
 <span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles*</span> - Downloads all 
 motorcycles from the database
 
@@ -51,6 +53,7 @@ add a new motorcycle to the database
 
 <span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/motorcycles/capacity?<span style="color: blue">min=599&max=1000</span>*</span> - Allows to download the list of motorcycles according to the given parameters of the motorcycle capacity; if the list is empty, an appropriate message will be displayed
 
+####<span style="color: red">CIRCUITS</span>
 <span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/circuits*</span> - Allows you to retrieve a list of all tracks from the database
 
 <span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/circuits/{id}*</span> - Allows a specific track from the database; if the track is not found, an appropriate message is displayed
@@ -59,8 +62,9 @@ add a new motorcycle to the database
 
 <span style="color: yellow">**@DeleteMapping**</span> <span style="color: green">*/circuits/{id}*</span> - Allows you to remove a track from the database
 
-<span style="color: yellow">**@PatchMapping**</span> <span style="color: green">*/motorcycles/{id}/*</span> - Allows you to edit the length of a specific track; if this is not found, an appropriate message will be displayed
+<span style="color: yellow">**@PatchMapping**</span> <span style="color: green">*/circuits/{id}/*</span> - Allows you to edit the length of a specific track; if this is not found, an appropriate message will be displayed
 
+####<span style="color: red">LAPS</span>
 <span style="color: yellow">**@GetMapping**</span> <span style="color: green">*/laps*</span> - Allows you to view all trips from the databases
 
 <span style="color: yellow">**@PostMapping**</span> <span style="color: green">*/laps/bikers/{bikerId}/circuits/{circuitId}*</span> - Allows you to add the ride of a specific motorcyclist on a specific track to the database; if the motorcyclist or track is not found, an appropriate message will be displayed
