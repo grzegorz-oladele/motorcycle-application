@@ -68,8 +68,8 @@ public class BikerServiceImpl implements BikerService {
     public void addMotorcycle(long bikerId, long bikeId) {
         BikerEntity bikerEntity = getBikerEntity(bikerId);
         MotorcycleEntity motorcycleEntity = getMotorcycle(bikeId);
-        List<MotorcycleEntity> motorcycleEntityList = motorcycleRepository.findAll();
-        motorcycleValidator.validationMotorcycleExist(motorcycleEntity, motorcycleEntityList);
+        List<BikerEntity> bikers = getBikers();
+        motorcycleValidator.validationMotorcycleExist(motorcycleEntity, bikers);
         bikerEntity.getBikes().add(motorcycleEntity);
         motorcycleRepository.save(motorcycleEntity);
     }

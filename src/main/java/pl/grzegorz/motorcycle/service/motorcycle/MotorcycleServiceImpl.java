@@ -75,7 +75,7 @@ public class MotorcycleServiceImpl implements MotorcycleService {
 
     @Override
     public List<MotorcycleDtoInfo> getAllByBrand(String brand) {
-        var list = motorcycleRepository.listOfBikesByBrand(brand);
+        List<MotorcycleEntity> list = motorcycleRepository.listOfBikesByBrand(brand);
         motorcycleValidator.validationEmptyMotorcycleList(list);
         return toMotorcycleDtoInfoList(list);
     }

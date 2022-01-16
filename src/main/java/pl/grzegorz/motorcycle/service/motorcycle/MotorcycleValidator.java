@@ -3,6 +3,7 @@ package pl.grzegorz.motorcycle.service.motorcycle;
 import org.springframework.stereotype.Component;
 import pl.grzegorz.motorcycle.exception.motorcycle.MotorcycleError;
 import pl.grzegorz.motorcycle.exception.motorcycle.MotorcycleException;
+import pl.grzegorz.motorcycle.model.BikerEntity;
 import pl.grzegorz.motorcycle.model.MotorcycleEntity;
 
 import java.util.List;
@@ -23,10 +24,12 @@ public class MotorcycleValidator {
         }
     }
 
-    public void validationMotorcycleExist(MotorcycleEntity motorcycleEntity, List<MotorcycleEntity> motorcycleEntityList) {
-        for (MotorcycleEntity entity : motorcycleEntityList) {
-            if (entity.getSerialNumber().equals(motorcycleEntity.getSerialNumber())) {
-                throw new MotorcycleException(MotorcycleError.MOTORCYCLE_ALREADY_EXIST);
+    public void validationMotorcycleExist(MotorcycleEntity motorcycleEntity, List<BikerEntity> bikers) {
+        for (BikerEntity biker : bikers) {
+            for (MotorcycleEntity motorcycle : biker.getBikes()) {
+                if (motorcycle.getSerialNumber().equals(motorcycleEntity.getSerialNumber())) {
+                    throw new MotorcycleException(MotorcycleError.MOTORCYCLE_ALREADY_EXIST);
+                }
             }
         }
     }

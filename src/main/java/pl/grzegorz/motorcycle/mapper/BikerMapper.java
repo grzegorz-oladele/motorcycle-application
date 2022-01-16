@@ -27,6 +27,9 @@ public class BikerMapper {
         if (Objects.nonNull(bikerDto.getName())) {
             bikerBuilder.withName(bikerDto.getName());
         }
+        if(Objects.nonNull(bikerDto.getEmail())) {
+            bikerBuilder.withEmail(bikerDto.getEmail());
+        }
         return bikerBuilder.build();
     }
 

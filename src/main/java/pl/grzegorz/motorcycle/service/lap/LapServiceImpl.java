@@ -53,10 +53,9 @@ public class LapServiceImpl implements LapService {
     }
 
     @Override
-    public List<LapDtoInfo> getAllLapsByDateAndCircuit(String startDate, String endDate, long circuitId) {
+    public List<LapDtoInfo> getAllLapsByDateAndCircuit(long circuitId) {
         CircuitEntity circuitEntity = circuitService.getCircuitEntity(circuitId);
-        List<LapEntity> list = lapRepository.findAllLapsByDateAndCircuit(LocalDate.parse(startDate),
-                LocalDate.parse(endDate), circuitEntity);
+        List<LapEntity> list = lapRepository.findAllLapsByDateAndCircuit(circuitEntity);
         lapValidator.validateEmptyList(list);
         return toLapDtoList(list);    }
 

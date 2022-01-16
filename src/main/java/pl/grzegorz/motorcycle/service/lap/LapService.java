@@ -13,5 +13,5 @@ public interface LapService {
 
     List<LapDtoInfo> getAllLapsByBiker(long bikerId);
 
-    List<LapDtoInfo> getAllLapsByDateAndCircuit(String startDate, String endDate, long circuitId);
+    List<LapDtoInfo> getAllLapsByDateAndCircuit(long circuitId);
 }

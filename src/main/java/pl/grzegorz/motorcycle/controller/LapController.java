@@ -31,8 +31,7 @@ public class LapController {
     }
 
     @GetMapping("/circuits/{circuitId}")
-    public List<LapDtoInfo> getAllLapsByDateAndCircuit(@RequestParam String startDate, @RequestParam String endDate,
-                                                       @PathVariable long circuitId) {
-        return lapService.getAllLapsByDateAndCircuit(startDate,endDate,circuitId);
+    public List<LapDtoInfo> getAllLapsByDateAndCircuit(@PathVariable long circuitId) {
+        return lapService.getAllLapsByDateAndCircuit(circuitId);
     }
 }

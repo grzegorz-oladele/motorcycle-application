@@ -1,5 +1,7 @@
 package pl.grzegorz.motorcycle.dto.motorcycle;
 
+
+import com.sun.istack.NotNull;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,5 +18,6 @@ public class MotorcycleDto {
     private int year;
     private int capacity;
     private int horsePower;
+    @NotNull
     private String serialNumber;
 }

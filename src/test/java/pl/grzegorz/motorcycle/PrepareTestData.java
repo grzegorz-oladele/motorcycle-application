@@ -17,16 +17,19 @@ public class PrepareTestData {
         biker1.setId(1);
         biker1.setName("Valentino Rossi");
         biker1.setEmail("valentino-rossi123@123.pl");
+        biker1.getBikes().add(motorcycles().get(0));
 
         BikerEntity biker2 = new BikerEntity();
         biker2.setId(2);
         biker2.setName("Marc Marquez");
         biker2.setEmail("marc-marquez123@123.pl");
+        biker2.getBikes().add(motorcycles().get(1));
 
         BikerEntity biker3 = new BikerEntity();
         biker3.setId(3);
         biker3.setName("Fabio_Quartararo");
         biker3.setEmail("fabio-quartararo123@123.pl");
+        biker3.getBikes().add(motorcycles().get(2));
 
         list.add(biker1);
         list.add(biker2);

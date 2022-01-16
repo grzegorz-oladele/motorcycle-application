@@ -69,10 +69,10 @@ class MotorcycleValidatorTest {
     void shouldThrowExceptionWhenMotorcycleWillBeFound() {
         MotorcycleValidator motorcycleValidator = new MotorcycleValidator();
         MotorcycleEntity motorcycleEntity = getMotorcycles().get(0);
-        List<MotorcycleEntity> motorcycleEntityList = getMotorcycles();
+        List<BikerEntity> bikers = getBikers();
 //        when + then
         assertThrows(MotorcycleException.class, () -> motorcycleValidator.validationMotorcycleExist(motorcycleEntity,
-                motorcycleEntityList));
+                bikers));
         assertThat(MotorcycleError.MOTORCYCLE_ALREADY_EXIST.getMessage(), is("Motorcycle already exist"));
     }
 
@@ -81,9 +81,9 @@ class MotorcycleValidatorTest {
         MotorcycleValidator motorcycleValidator = new MotorcycleValidator();
         MotorcycleEntity motorcycleEntity = new MotorcycleEntity();
         motorcycleEntity.setSerialNumber("ubcq782bjcs988u2rbjdicub98uij32djkqw");
-        List<MotorcycleEntity> motorcycleEntityList = getMotorcycles();
+        List<BikerEntity> bikers = getBikers();
 //        when
-        motorcycleValidator.validationMotorcycleExist(motorcycleEntity, motorcycleEntityList);
+        motorcycleValidator.validationMotorcycleExist(motorcycleEntity, bikers);
 //        then
         System.out.println("The validateBikeExist() method did not throw an exception. The test passed");
     }
@@ -96,5 +96,10 @@ class MotorcycleValidatorTest {
     private List<String> getSerialNumbers() {
         PrepareTestData prepareTestData = new PrepareTestData();
         return prepareTestData.serialNumbers();
+    }
+
+    private List<BikerEntity> getBikers() {
+        PrepareTestData prepareTestData = new PrepareTestData();
+        return prepareTestData.bikers();
     }
 }
