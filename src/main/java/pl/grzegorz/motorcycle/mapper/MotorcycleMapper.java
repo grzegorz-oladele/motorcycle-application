@@ -3,8 +3,8 @@ package pl.grzegorz.motorcycle.mapper;
 import org.springframework.stereotype.Component;
 import pl.grzegorz.motorcycle.builder.MotorcycleDtoInfoBuilder;
 import pl.grzegorz.motorcycle.builder.MotorcycleEntityBuilder;
-import pl.grzegorz.motorcycle.dto.MotorcycleDto;
-import pl.grzegorz.motorcycle.dto.MotorcycleDtoInfo;
+import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDto;
+import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDtoInfo;
 import pl.grzegorz.motorcycle.model.MotorcycleEntity;
 
 import java.util.Objects;

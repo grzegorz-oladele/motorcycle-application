@@ -17,7 +17,7 @@ public class BikerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sequenceBikersId")
     private long id;
-    private String username;
+    private String name;
     private String email;
     private boolean isActive = true;
     @OneToMany(cascade = CascadeType.REMOVE)

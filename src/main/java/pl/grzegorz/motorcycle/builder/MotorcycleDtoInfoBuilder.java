@@ -1,6 +1,6 @@
 package pl.grzegorz.motorcycle.builder;
 
-import pl.grzegorz.motorcycle.dto.MotorcycleDtoInfo;
+import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDtoInfo;
 
 public class MotorcycleDtoInfoBuilder {
 

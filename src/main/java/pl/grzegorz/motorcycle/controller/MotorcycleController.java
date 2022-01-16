@@ -2,8 +2,8 @@ package pl.grzegorz.motorcycle.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import pl.grzegorz.motorcycle.dto.MotorcycleDto;
-import pl.grzegorz.motorcycle.dto.MotorcycleDtoInfo;
+import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDto;
+import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDtoInfo;
 import pl.grzegorz.motorcycle.service.MotorcycleService;
 
 import java.util.List;

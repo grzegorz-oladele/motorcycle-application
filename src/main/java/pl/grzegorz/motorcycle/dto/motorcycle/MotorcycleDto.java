@@ -1,13 +1,16 @@
-package pl.grzegorz.motorcycle.dto;
+package pl.grzegorz.motorcycle.dto.motorcycle;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
-public class MotorcycleDtoInfo {
+@EqualsAndHashCode
+@ToString
+public class MotorcycleDto {
 
-    private long id;
     private String brand;
     private String model;
     private int year;

@@ -1,7 +1,7 @@
 package pl.grzegorz.motorcycle.service;
 
-import pl.grzegorz.motorcycle.dto.MotorcycleDto;
-import pl.grzegorz.motorcycle.dto.MotorcycleDtoInfo;
+import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDto;
+import pl.grzegorz.motorcycle.dto.motorcycle.MotorcycleDtoInfo;
 
 import java.util.List;
 
