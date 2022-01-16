@@ -61,7 +61,7 @@ public class MotorcycleServiceImpl implements MotorcycleService {
     @Override
     public MotorcycleDtoInfo editHorsePower(long id, int horsePower) {
         MotorcycleEntity motorcycleEntity = getMotorcycleEntity(id);
-        motorcycleEntity.setCapacity(horsePower);
+        motorcycleEntity.setHorsePower(horsePower);
         motorcycleRepository.save(motorcycleEntity);
         return motorcycleMapper.fromEntityToDtoInfo(motorcycleEntity);
     }

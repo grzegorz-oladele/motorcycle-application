@@ -28,7 +28,6 @@ public class BikerServiceImpl implements BikerService {
     private final BikerValidator bikerValidator;
     private final MotorcycleValidator motorcycleValidator;
 
-
     @Override
     public List<BikerDtoInfo> getAllBikers() {
         List<BikerEntity> list = getBikers();
@@ -69,10 +68,9 @@ public class BikerServiceImpl implements BikerService {
     public void addMotorcycle(long bikerId, long bikeId) {
         BikerEntity bikerEntity = getBikerEntity(bikerId);
         MotorcycleEntity motorcycleEntity = getMotorcycle(bikeId);
-        List<BikerEntity> bikers = getBikers();
-        motorcycleValidator.validationMotorcycleExist(motorcycleEntity, bikers);
+        List<MotorcycleEntity> motorcycleEntityList = motorcycleRepository.findAll();
+        motorcycleValidator.validationMotorcycleExist(motorcycleEntity, motorcycleEntityList);
         bikerEntity.getBikes().add(motorcycleEntity);
-//        motorcycleEntity.setBiker(bikerEntity);
         motorcycleRepository.save(motorcycleEntity);
     }
 

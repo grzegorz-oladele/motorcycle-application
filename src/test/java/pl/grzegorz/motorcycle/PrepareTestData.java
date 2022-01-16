@@ -41,41 +41,41 @@ public class PrepareTestData {
                 .collect(Collectors.toList());
     }
 
-    public List<MotorcycleEntity> bikes() {
+    public List<MotorcycleEntity> motorcycles() {
         List<MotorcycleEntity> list = new ArrayList<>();
-        MotorcycleEntity bike1 = new MotorcycleEntity();
-        bike1.setBrand("Ducati");
-        bike1.setModel("Panigale V4S");
-        bike1.setCapacity(1098);
-        bike1.setHorsePower(224);
-        bike1.setYear(2020);
-        bike1.setSerialNumber("uh892368134y8hi7yr4b1idh9823789uh");
+        MotorcycleEntity motorcycle1 = new MotorcycleEntity();
+        motorcycle1.setBrand("Ducati");
+        motorcycle1.setModel("Panigale V4S");
+        motorcycle1.setCapacity(1098);
+        motorcycle1.setHorsePower(224);
+        motorcycle1.setYear(2020);
+        motorcycle1.setSerialNumber("uh892368134y8hi7yr4b1idh9823789uh");
 
-        MotorcycleEntity bike2 = new MotorcycleEntity();
-        bike2.setBrand("BMW");
-        bike2.setModel("S1000RR");
-        bike2.setCapacity(999);
-        bike2.setHorsePower(211);
-        bike2.setYear(2021);
-        bike2.setSerialNumber("48RHIUUI23INJW989823BDJK92");
+        MotorcycleEntity motorcycle2 = new MotorcycleEntity();
+        motorcycle2.setBrand("BMW");
+        motorcycle2.setModel("S1000RR");
+        motorcycle2.setCapacity(999);
+        motorcycle2.setHorsePower(211);
+        motorcycle2.setYear(2021);
+        motorcycle2.setSerialNumber("48RHIUUI23INJW989823BDJK92");
 
-        MotorcycleEntity bike3 = new MotorcycleEntity();
-        bike3.setBrand("MV Agusta");
-        bike3.setModel("F4");
-        bike3.setCapacity(1098);
-        bike3.setHorsePower(203);
-        bike3.setYear(2012);
-        bike3.setSerialNumber("H98134HUIIUQ89134BIUCNU892DN8743BUFI3");
+        MotorcycleEntity motorcycle3 = new MotorcycleEntity();
+        motorcycle3.setBrand("MV Agusta");
+        motorcycle3.setModel("F4");
+        motorcycle3.setCapacity(1098);
+        motorcycle3.setHorsePower(203);
+        motorcycle3.setYear(2012);
+        motorcycle3.setSerialNumber("H98134HUIIUQ89134BIUCNU892DN8743BUFI3");
 
-        list.add(bike1);
-        list.add(bike2);
-        list.add(bike3);
+        list.add(motorcycle1);
+        list.add(motorcycle2);
+        list.add(motorcycle3);
 
         return list;
     }
 
     public List<String> serialNumbers() {
-        return bikes()
+        return motorcycles()
                 .stream()
                 .map(MotorcycleEntity::getSerialNumber)
                 .collect(Collectors.toList());
